@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f3e9">
+  <title>Carlos · 30 Jahre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <a class="wordmark" href="#inicio" data-i18n="wordmark">CARLOS · 30 JAHRE</a>
+    <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false" data-i18n-aria-label="menuOpen">☰</button>
+    <nav class="nav">
+      <a class="active" href="#inicio" data-i18n="home">START</a>
+      <a href="#wishlist" data-i18n="wishlist" data-view="wishlist">WUNSCHLISTE</a>
+    </nav>
+    <div class="languages" aria-label="Sprache auswählen">
+      <button class="selected" data-lang="de" aria-pressed="true">DE</button>
+      <span>|</span>
+      <button data-lang="es" aria-pressed="false">ES</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="confetti" aria-hidden="true">
+        <i class="dot d1"></i><i class="dot d2"></i><i class="dot d3"></i><i class="dot d4"></i>
+        <i class="dot d5"></i><i class="dot d6"></i><i class="dot d7"></i><i class="dot d8"></i>
+        <i class="dot d9"></i><i class="dot d10"></i><i class="dot d11"></i><i class="dot d12"></i>
+        <i class="dot d13"></i><i class="dot d14"></i><i class="dot d15"></i><i class="dot d16"></i>
+        <i class="squiggle q1"></i><i class="squiggle q2"></i><i class="squiggle q3"></i>
+      </div>
+
+      <div class="hero-copy">
+
+        <div class="headline-row">
+          <h1 data-i18n="headline">Auf die 30!</h1>
+          <svg class="cake" viewBox="0 0 100 100" aria-label="Geburtstagstorte" role="img" data-i18n-aria-label="cakeAlt">
+            <g fill="none" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 48h56v32H22zM22 58q7 7 14 0t14 0t14 0t14 0"/>
+              <path d="M16 80h68M31 45V24q0-7 5-7t5 7v21M47 45V14q0-7 5-7t5 7v31M63 45V24q0-7 5-7t5 7v21"/>
+              <path d="M36 10q-6-5 0-9M52 1q-6-5 0-9M68 10q-6-5 0-9"/>
+            </g>
+          </svg>
+        </div>
+
+        <p class="subtitle" data-i18n="subtitle">Ein neues Jahrzehnt – der perfekte Anlass, um zusammenzukommen, anzustoßen und gemeinsam zu feiern.</p>
+
+        <div class="event-info">
+          <div class="info-item">
+            <svg viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="9" width="30" height="27" rx="2"/><path d="M12 4v10M28 4v10M5 17h30"/></g></svg>
+            <div><strong data-i18n="dateLabel">Datum</strong><span>31.12.2026</span></div>
+          </div>
+          <div class="info-item">
+            <svg viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="20" cy="20" r="16"/><path d="M20 10v11l8 5"/></g></svg>
+            <div><strong data-i18n="timeLabel">Uhrzeit</strong><span>22:00 Uhr</span></div>
+          </div>
+          <div class="info-item">
+            <svg viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M32 16c0 10-12 21-12 21S8 26 8 16a12 12 0 1 1 24 0Z"/><circle cx="20" cy="16" r="4"/></g></svg>
+            <div><strong data-i18n="placeLabel">Ort</strong><span>Pinneberger Str. 31, Wedel</span></div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <a class="button primary" href="https://www.google.com/maps/search/?api=1&amp;query=Pinneberger+Str.+31%2C+Wedel" target="_blank" rel="noopener noreferrer"><span data-i18n="directions">ANFAHRT</span> <span>↗</span></a>
+          <a class="button secondary" href="#wishlist" data-view="wishlist">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="13" width="24" height="16" rx="1"/><path d="M2 9h28v5H2zM16 9v20"/><path d="M16 9H9a4 4 0 1 1 4-4c0 2 3 4 3 4Z"/><path d="M16 9h7a4 4 0 1 0-4-4c0 2-3 4-3 4Z"/></g></svg>
+            <span data-i18n="wishlist">WUNSCHLISTE</span> <span>→</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="photo-frame" aria-hidden="true"><img src="assets/dinner-photo.jpg" alt=""></div>
+
+      <svg class="champagne" viewBox="0 0 210 300" aria-hidden="true">
+        <g fill="none" stroke="#171713" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M54 45 91 58 72 127q-5 20-20 32l-14 16q-4 5 3 7l48 8q8 0 4-6l-15-21q-9-13-5-30z"/><path d="M47 102q18 13 39 8" stroke="#aa833e" stroke-width="2.5"/>
+          <path d="M130 84 168 81 170 153q0 21-12 37l-11 17q-3 6 4 7l39-2q7-1 3-7l-12-17q-8-13-7-33z"/><path d="M131 130q18 11 39 5" stroke="#aa833e" stroke-width="2.5"/>
+          <path d="M104 29l-4-20M122 34l14-25M139 43l16-7" stroke="#aa833e" stroke-width="2.2"/>
+        </g>
+        <g fill="#b28a45"><ellipse cx="64" cy="125" rx="1.8" ry="2.5"/><ellipse cx="73" cy="115" rx="1.5" ry="2"/><ellipse cx="151" cy="149" rx="1.8" ry="2.5"/></g>
+      </svg>
+
+      <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40C220 5 350 100 590 57S900 35 1100 56s245 56 340 36V120H0Z" fill="#e9dfcf" opacity=".42"/><path d="M0 62C220 25 360 115 610 78s310-35 500-14 230 50 330 30v26H0Z" fill="#f8f3e9"/></svg>
+    </section>
+
+    <section class="wishlist-section" id="wishlist" hidden aria-labelledby="wishlist-title">
+      <div class="wishlist-intro">
+        <h1 id="wishlist-title" data-i18n="wishlistTitle">Eine kleine Wunschliste</h1>
+        <p class="wishlist-lead" data-i18n="wishlistLead">Wenn du mir etwas schenken möchtest, findest du hier ein paar Ideen. Das Wichtigste ist, dass wir zusammen feiern. ♡</p>
+      </div>
+      <p class="wishlist-status" id="wishlist-status" role="status" aria-live="polite" data-i18n="wishlistLoading">Die Wunschliste wird geladen …</p>
+      <div class="gift-grid" id="gift-grid"></div>
+      <p class="wishlist-note" data-i18n="wishlistNote">Danke, dass du mit mir feierst. ♡</p>
+    </section>
+    <iframe name="wishlist-api-frame" id="wishlist-api-frame" title="" aria-hidden="true" class="api-frame"></iframe>
+  </main>
+
+  <footer><span data-i18n="footer">Wir sehen uns bald!</span><a href="#inicio" data-i18n="backToTop">Nach oben ↑</a></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
