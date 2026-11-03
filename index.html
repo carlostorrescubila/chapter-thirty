@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="de">
 <head>
   <meta charset="utf-8">
@@ -12,10 +12,10 @@
 </head>
 <body>
   <header class="header">
-    <a class="wordmark" href="#inicio" data-i18n="wordmark">CARLOS · 30 JAHRE</a>
+    <a class="wordmark" href="./" data-i18n="wordmark">CARLOS · 30 JAHRE</a>
     <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false" data-i18n-aria-label="menuOpen">☰</button>
     <nav class="nav">
-      <a class="active" href="#inicio" data-i18n="home">START</a>
+      <a class="active" href="./" data-view="home" data-i18n="home">START</a>
       <a href="#wishlist" data-i18n="wishlist" data-view="wishlist">WUNSCHLISTE</a>
     </nav>
     <div class="languages" aria-label="Sprache auswählen">
@@ -53,11 +53,11 @@
         <div class="event-info">
           <div class="info-item">
             <svg viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="9" width="30" height="27" rx="2"/><path d="M12 4v10M28 4v10M5 17h30"/></g></svg>
-            <div><strong data-i18n="dateLabel">Datum</strong><span>31.12.2026</span></div>
+            <div><strong data-i18n="dateLabel">Datum</strong><span>09.01.2027</span></div>
           </div>
           <div class="info-item">
             <svg viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="20" cy="20" r="16"/><path d="M20 10v11l8 5"/></g></svg>
-            <div><strong data-i18n="timeLabel">Uhrzeit</strong><span>22:00 Uhr</span></div>
+            <div><strong data-i18n="timeLabel">Uhrzeit</strong><span>16:00 Uhr</span></div>
           </div>
           <div class="info-item">
             <svg viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M32 16c0 10-12 21-12 21S8 26 8 16a12 12 0 1 1 24 0Z"/><circle cx="20" cy="16" r="4"/></g></svg>
@@ -72,6 +72,23 @@
             <span data-i18n="wishlist">WUNSCHLISTE</span> <span>→</span>
           </a>
         </div>
+
+        <section class="rsvp" aria-labelledby="rsvp-title">
+          <h2 id="rsvp-title" data-i18n="rsvpTitle">Confirma tu asistencia</h2>
+          <p class="rsvp-closed" id="rsvp-closed" role="status" data-i18n="rsvpClosed" hidden>El plazo para confirmar asistencia ya terminó.</p>
+          <form id="rsvp-form" class="rsvp-form">
+            <label><span data-i18n="rsvpFirstName">Nombre</span><input name="firstName" autocomplete="given-name" required maxlength="100"></label>
+            <label><span data-i18n="rsvpLastName">Apellido</span><input name="lastName" autocomplete="family-name" required maxlength="100"></label>
+            <label class="rsvp-email"><span data-i18n="rsvpEmail">Correo electrónico</span><input name="email" type="email" autocomplete="email" required maxlength="200"></label>
+            <label class="rsvp-companion-toggle"><input id="rsvp-has-guest" type="checkbox"><span data-i18n="rsvpHasGuest">Vengo con alguien</span></label>
+            <div class="rsvp-guest-fields" id="rsvp-guest-fields" hidden>
+              <label><span data-i18n="rsvpGuestFirstName">Nombre del acompañante</span><input name="guestFirstName" autocomplete="off" maxlength="100" disabled></label>
+              <label><span data-i18n="rsvpGuestLastName">Apellido del acompañante</span><input name="guestLastName" autocomplete="off" maxlength="100" disabled></label>
+            </div>
+            <p class="rsvp-message" id="rsvp-message" role="status" aria-live="polite"></p>
+            <button class="button primary" type="submit" data-i18n="rsvpSubmit">Confirmar asistencia</button>
+          </form>
+        </section>
       </div>
 
       <div class="photo-frame" aria-hidden="true"><img src="assets/dinner-photo.jpg" alt=""></div>
@@ -91,16 +108,26 @@
     <section class="wishlist-section" id="wishlist" hidden aria-labelledby="wishlist-title">
       <div class="wishlist-intro">
         <h1 id="wishlist-title" data-i18n="wishlistTitle">Eine kleine Wunschliste</h1>
-        <p class="wishlist-lead" data-i18n="wishlistLead">Wenn du mir etwas schenken möchtest, findest du hier ein paar Ideen. Das Wichtigste ist, dass wir zusammen feiern. ♡</p>
+        <div class="wishlist-lead">
+          <p data-i18n="wishlistLead1">Geschenke sind absolut kein Muss, aber ich freue mich natürlich immer sehr darüber und nehme sie mit großer Freude entgegen.</p>
+          <p data-i18n="wishlistLead2">Wenn du mir eine Freude machen möchtest, aber nicht genau weißt, was du schenken sollst, habe ich diese kleine Liste mit ein paar Ideen zusammengestellt, die mir gefallen könnten. Du musst dich natürlich nicht daran halten! Über jedes Geschenk, das dir einfällt, freue ich mich – die Liste soll dir nur eine kleine Hilfe sein, falls du eine brauchst.</p>
+          <p data-i18n="wishlistLead3">Und vor allem zählt, dass wir gemeinsam eine schöne Zeit verbringen, die Feier genießen und schöne Erinnerungen schaffen. Ein Geschenk ist dabei nicht das Wichtigste.</p>
+        </div>
+      </div>
+      <div class="gift-filters" role="group" aria-label="Filter gifts" data-i18n-aria-label="giftFiltersLabel">
+        <button type="button" class="gift-filter is-active" data-gift-filter="all" aria-pressed="true" data-i18n="filterAll">Alle</button>
+        <button type="button" class="gift-filter" data-gift-filter="individual" aria-pressed="false" data-i18n="filterIndividual">Einzelgeschenke</button>
+        <button type="button" class="gift-filter" data-gift-filter="grupal" aria-pressed="false" data-i18n="filterGroup">Gruppengeschenke</button>
+        <button type="button" class="gift-filter" data-gift-filter="gutschein" aria-pressed="false" data-i18n="filterVoucher">Gutscheine</button>
       </div>
       <p class="wishlist-status" id="wishlist-status" role="status" aria-live="polite" data-i18n="wishlistLoading">Die Wunschliste wird geladen …</p>
       <div class="gift-grid" id="gift-grid"></div>
-      <p class="wishlist-note" data-i18n="wishlistNote">Danke, dass du mit mir feierst. ♡</p>
+      <p class="wishlist-note" data-i18n="wishlistNote">Danke, dass du mit mir feierst ♡</p>
     </section>
     <iframe name="wishlist-api-frame" id="wishlist-api-frame" title="" aria-hidden="true" class="api-frame"></iframe>
   </main>
 
-  <footer><span data-i18n="footer">Wir sehen uns bald!</span><a href="#inicio" data-i18n="backToTop">Nach oben ↑</a></footer>
+  <footer><span data-i18n="footer">Wir sehen uns bald!</span><a class="back-to-top" href="./" data-i18n="backToTop">Nach oben ↑</a></footer>
   <script src="js/script.js"></script>
 </body>
 </html>
