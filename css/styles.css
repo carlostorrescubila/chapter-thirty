@@ -51,6 +51,7 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(76px,10vw,132px);lin
 .important-text{font-family:var(--serif);font-size:24px;line-height:1.45;margin:0 auto 24px}
 .heart{font-family:var(--sans)}
 .optional{font-family:var(--sans);font-size:21px;line-height:1.5;color:var(--muted);font-weight:300;margin:0 auto 36px;text-align:center}
+.hero-copy>.optional{max-width:100%;padding:0 12px;margin:0 auto 42px}
 .faq{max-width:892px;margin:0 auto 65px;padding:0 0}
 .faq details{border:1px solid #e2d6c3;border-radius:13px;overflow:hidden}
 .faq summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:34px;padding:24px 35px;min-height:106px}
@@ -103,7 +104,7 @@ footer a{letter-spacing:0;font-size:13px}
  .important h2{font-size:37px}
  .gold-line{margin:19px auto 21px}
  .important-text{font-size:18px;line-height:1.55}
- .optional{font-size:15px;margin-bottom:28px}
+ .hero-copy>.optional{font-size:15px;margin-bottom:32px}
  .faq{margin:0 18px 45px}
  .faq summary{padding:18px 16px;gap:14px;min-height:88px}
  .question-mark{width:35px;height:35px;font-size:24px}
@@ -116,12 +117,6 @@ footer a{letter-spacing:0;font-size:13px}
 }
 @media(max-width:390px){.wordmark{font-size:10px;letter-spacing:1.5px}.languages{gap:6px}.info-item{padding:2px 6px}.info-item svg{width:25px;height:25px}.info-item span{font-size:10px}.subtitle{font-size:17px}}
 
-
-
-
-.hero {
-  min-height: 760px;
-}
 
 @media (max-width: 760px) {
   .hero {
