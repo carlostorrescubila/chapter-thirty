@@ -40,10 +40,11 @@
         <div class="headline-row">
           <h1 data-i18n="headline">Auf die 30!</h1>
           <svg class="cake" viewBox="0 0 100 100" aria-label="Geburtstagstorte" role="img" data-i18n-aria-label="cakeAlt">
-            <g fill="none" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 48h56v32H22zM22 58q7 7 14 0t14 0t14 0t14 0"/>
-              <path d="M16 80h68M31 45V24q0-7 5-7t5 7v21M47 45V14q0-7 5-7t5 7v31M63 45V24q0-7 5-7t5 7v21"/>
-              <path d="M36 10q-6-5 0-9M52 1q-6-5 0-9M68 10q-6-5 0-9"/>
+            <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 45h78v36q0 5-5 5H16q-5 0-5-5zM11 55q10 10 20 0t20 0t20 0t18 0"/>
+              <path d="M7 89h86"/>
+              <path d="M27 45V25q0-5 5-5t5 5v20M47 45V25q0-5 5-5t5 5v20M67 45V25q0-5 5-5t5 5v20"/>
+              <path d="M32 20C24 14 28 8 32 3c7 6 9 12 0 17ZM52 20C44 14 48 8 52 3c7 6 9 12 0 17ZM72 20C64 14 68 8 72 3c7 6 9 12 0 17Z"/>
             </g>
           </svg>
         </div>
@@ -64,6 +65,8 @@
             <div><strong data-i18n="placeLabel">Ort</strong><span>Pinneberger Str. 31, Wedel</span></div>
           </div>
         </div>
+
+        <p class="optional" data-i18n="giftsOptional">Los regalos son completamente opcionales.</p>
 
         <div class="actions">
           <a class="button primary" href="https://www.google.com/maps/search/?api=1&amp;query=Pinneberger+Str.+31%2C+Wedel" target="_blank" rel="noopener noreferrer"><span data-i18n="directions">ANFAHRT</span> <span>↗</span></a>
@@ -93,13 +96,27 @@
 
       <div class="photo-frame" aria-hidden="true"><img src="assets/dinner-photo.jpg" alt=""></div>
 
-      <svg class="champagne" viewBox="0 0 210 300" aria-hidden="true">
-        <g fill="none" stroke="#171713" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M54 45 91 58 72 127q-5 20-20 32l-14 16q-4 5 3 7l48 8q8 0 4-6l-15-21q-9-13-5-30z"/><path d="M47 102q18 13 39 8" stroke="#aa833e" stroke-width="2.5"/>
-          <path d="M130 84 168 81 170 153q0 21-12 37l-11 17q-3 6 4 7l39-2q7-1 3-7l-12-17q-8-13-7-33z"/><path d="M131 130q18 11 39 5" stroke="#aa833e" stroke-width="2.5"/>
-          <path d="M104 29l-4-20M122 34l14-25M139 43l16-7" stroke="#aa833e" stroke-width="2.2"/>
+      <svg class="champagne" viewBox="0 0 240 300" aria-hidden="true">
+        <!-- Rounded goblets inspired by the reference, in the site's ink and champagne palette. -->
+        <g transform="translate(5 0)" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 115Q39 120 60 115Q81 110 104 115C105 148 91 177 72 193Q60 200 48 193C29 177 15 148 16 115Z" fill="#d7b366" fill-opacity=".3"/>
+          <path d="M18 32C13 60 7 91 9 126C11 161 27 188 46 202Q53 207 60 207L64 229C64 240 70 247 82 252C102 260 108 266 99 274C86 284 34 284 21 274C12 266 18 260 38 252C50 247 56 240 56 229L60 207Q67 207 74 202C93 188 109 161 111 126C113 91 107 60 102 32" fill="none" stroke="#191915" stroke-width="1.8"/>
+          <ellipse cx="60" cy="32" rx="42" ry="9" fill="#fffdf8" fill-opacity=".32" stroke="#191915" stroke-width="1.8"/>
+          <path d="M12 133Q38 116 60 131Q84 148 108 130" fill="none" stroke="#a98038" stroke-width="2.2"/>
+          <path d="M25 47C20 72 17 96 17 107M95 47C100 72 103 96 103 107" fill="none" stroke="#fffdf8" stroke-width="2" opacity=".9"/>
+          <path d="M41 145q2 3 0 6m8 3q2 3 0 5" fill="none" stroke="#a98038" stroke-width="1.2"/>
         </g>
-        <g fill="#b28a45"><ellipse cx="64" cy="125" rx="1.8" ry="2.5"/><ellipse cx="73" cy="115" rx="1.5" ry="2"/><ellipse cx="151" cy="149" rx="1.8" ry="2.5"/></g>
+        <g transform="translate(125 8)" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 115Q39 120 60 115Q81 110 104 115C105 148 91 177 72 193Q60 200 48 193C29 177 15 148 16 115Z" fill="#d7b366" fill-opacity=".3"/>
+          <path d="M18 32C13 60 7 91 9 126C11 161 27 188 46 202Q53 207 60 207L64 229C64 240 70 247 82 252C102 260 108 266 99 274C86 284 34 284 21 274C12 266 18 260 38 252C50 247 56 240 56 229L60 207Q67 207 74 202C93 188 109 161 111 126C113 91 107 60 102 32" fill="none" stroke="#191915" stroke-width="1.8"/>
+          <ellipse cx="60" cy="32" rx="42" ry="9" fill="#fffdf8" fill-opacity=".32" stroke="#191915" stroke-width="1.8"/>
+          <path d="M12 133Q38 116 60 131Q84 148 108 130" fill="none" stroke="#a98038" stroke-width="2.2"/>
+          <path d="M25 47C20 72 17 96 17 107M95 47C100 72 103 96 103 107" fill="none" stroke="#fffdf8" stroke-width="2" opacity=".9"/>
+          <path d="M41 145q2 3 0 6m8 3q2 3 0 5" fill="none" stroke="#a98038" stroke-width="1.2"/>
+        </g>
+        <g fill="none" stroke="#a98038" stroke-width="2.4" stroke-linecap="round">
+          <path d="m170 41-5-23m24 27 15-27m7 49 18-7M17 208q12-9 23-11"/>
+        </g>
       </svg>
 
       <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40C220 5 350 100 590 57S900 35 1100 56s245 56 340 36V120H0Z" fill="#e9dfcf" opacity=".42"/><path d="M0 62C220 25 360 115 610 78s310-35 500-14 230 50 330 30v26H0Z" fill="#f8f3e9"/></svg>
@@ -110,7 +127,7 @@
         <h1 id="wishlist-title" data-i18n="wishlistTitle">Eine kleine Wunschliste</h1>
         <div class="wishlist-lead">
           <p data-i18n="wishlistLead1">Geschenke sind absolut kein Muss, aber ich freue mich natürlich immer sehr darüber und nehme sie mit großer Freude entgegen.</p>
-          <p data-i18n="wishlistLead2">Wenn du mir eine Freude machen möchtest, aber nicht genau weißt, was du schenken sollst, habe ich diese kleine Liste mit ein paar Ideen zusammengestellt, die mir gefallen könnten. Du musst dich natürlich nicht daran halten! Über jedes Geschenk, das dir einfällt, freue ich mich – die Liste soll dir nur eine kleine Hilfe sein, falls du eine brauchst.</p>
+          <p data-i18n="wishlistLead2">Falls du mir etwas schenken möchtest und noch keine Idee hast, findest du hier ein paar Vorschläge. Natürlich kannst du mich auch mit etwas anderem überraschen.</p>
           <p data-i18n="wishlistLead3">Und vor allem zählt, dass wir gemeinsam eine schöne Zeit verbringen, die Feier genießen und schöne Erinnerungen schaffen. Ein Geschenk ist dabei nicht das Wichtigste.</p>
         </div>
       </div>

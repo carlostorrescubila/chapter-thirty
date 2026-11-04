@@ -1,0 +1,5 @@
+# Private Google Apps Script source; keep it in the local workspace only.
+/apps-script/
+
+# Local image assets are not used by the published website.
+/assets/

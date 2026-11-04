@@ -32,23 +32,29 @@ const translations = {
     rsvpError: 'No se pudo enviar la confirmación. Inténtalo de nuevo más tarde.',
     wishlistTitle: 'Si quieres tener un detalle',
     wishlistLead1: 'Los regalos no son obligatorios. Aun así, siempre se agradecen y se reciben con mucha ilusión.',
-    wishlistLead2: 'Si te apetece tener un detalle conmigo y no sabes muy bien qué regalarme, he preparado una pequeña lista con algunas ideas que podrían gustarme. No tienes por qué limitarte a ella. Cualquier regalo que se te ocurra será bienvenido. La lista es solo una pequeña ayuda por si te viene bien.',
+    wishlistLead2: 'Si quieres tener un detalle y no sabes qué regalarme, aquí tienes algunas ideas. También puedes sorprenderme con cualquier otro regalo.',
     wishlistLead3: 'Sobre todo, recuerda que lo más importante no es el regalo. Lo importante es compartir un momento alegre, disfrutar de la celebración y crear bonitos recuerdos.',
     giftFiltersLabel: 'Filtrar regalos', filterAll: 'Todos', filterIndividual: 'Individuales', filterGroup: 'Grupales', filterVoucher: 'Tarjetas regalo',
     wishlistFilterEmpty: 'No hay regalos en esta categoría.',
     wishlistLoading: 'Cargando la wishlist …', wishlistEmpty: 'Ahora mismo no hay regalos disponibles.',
-    wishlistError: 'No se ha podido cargar la wishlist. Inténtalo de nuevo más tarde.', wishlistNote: 'Gracias por celebrar conmigo ♡',
+    wishlistError: 'No se ha podido cargar la wishlist. Inténtalo de nuevo más tarde.',
+    wishlistDataError: 'Apps Script no pudo leer los datos. Comprueba que existan las pestañas Regalos y Reservas y que el proyecto tenga acceso a la hoja.',
+    wishlistConnectionError: 'No se pudo conectar con Apps Script. Comprueba que la implementación esté activa y permita el acceso a cualquiera.',
+    wishlistNote: 'Gracias por celebrar conmigo ♡',
     giftIndividual: 'Regalo individual', giftGroup: 'Regalo grupal', giftVoucher: 'Tarjeta regalo', giftIndividualAvailable: 'Regalo disponible', giftVoucherAvailable: 'Tarjeta regalo disponible', giftVoucherRecommendation: 'Recomiéndame tu restaurante favorito; yo pongo el apetito.', giftAvailable: n => `${n} plazas disponibles`,
     giftReserved: 'Ya reservado', giftSoloTaken: 'Regalo reservado por una persona', giftReserve: 'Reservar regalo', giftReserveSlot: 'Reservar una plaza', giftReserveSolo: 'Regalarlo yo solo', giftDetails: 'Ver regalo',
     giftName: 'Tu nombre', giftEmail: 'Correo electrónico', giftPhone: 'Teléfono',
     giftConsent: 'Acepto que mis datos de contacto se compartan con los demás participantes cuando el grupo esté completo.',
-    giftCommitment: 'Al confirmar la reserva, me comprometo a regalar este artículo. Entiendo que quedará reservado para evitar que otra persona lo regale también.',
+    giftCommitment: 'Al confirmar, me comprometo a regalar este artículo. Quedará reservado para mí y otros invitados no podrán elegirlo. Si cambio de opinión, cancelaré la reserva para que otra persona pueda regalarlo.',
+    giftGroupCommitment: 'Al confirmar, me comprometo a participar en este regalo grupal. Mi plaza quedará reservada y contará para completar el grupo. Si cambio de opinión, cancelaré la reserva para que otra persona pueda ocuparla.',
     giftSubmit: 'Solicitar reserva', giftCancel: 'Cancelar', giftSending: 'Enviando …',
-    giftSuccess: '¡Casi listo! Confirma la reserva mediante el enlace que te hemos enviado por correo.',
+    giftSuccess: 'Te enviamos un correo para confirmar que te comprometes a regalar este artículo. Al confirmar, quedará reservado para ti. Si cambias de opinión, podrás cancelarlo desde el enlace del correo.',
+    giftGroupSuccess: 'Te enviamos un correo para confirmar tu compromiso de participar en este regalo grupal. Al confirmar, tu plaza quedará reservada. Si cambias de opinión, podrás cancelarla desde el enlace del correo.',
     giftNoSlots: 'Ya reservado', giftPrice: 'Precio',
     eyebrow: 'CARLOS · 30 AÑOS', headline: '¡Brindemos por mis 30!', cakeAlt: 'Tarta de cumpleaños',
     subtitle: 'Una nueva década y la ocasión perfecta para reunirnos, brindar y celebrar juntos.',
     dateLabel: 'Fecha', timeLabel: 'Hora', placeLabel: 'Lugar', directions: 'CÓMO LLEGAR',
+    giftsOptional: 'Los regalos son completamente opcionales.',
     footer: '¡Nos vemos pronto!', backToTop: 'Volver arriba ↑'
   },
   de: {
@@ -65,23 +71,29 @@ const translations = {
     rsvpError: 'Die Bestätigung konnte nicht gesendet werden. Bitte versuche es später erneut.',
     wishlistTitle: 'Falls du mir etwas schenken möchtest',
     wishlistLead1: 'Geschenke sind absolut kein Muss, aber ich freue mich natürlich immer sehr darüber und nehme sie mit großer Freude entgegen.',
-    wishlistLead2: 'Wenn du mir eine Freude machen möchtest, aber nicht genau weißt, was du schenken sollst, habe ich diese kleine Liste mit ein paar Ideen zusammengestellt, die mir gefallen könnten. Du musst dich natürlich nicht daran halten! Über jedes Geschenk, das dir einfällt, freue ich mich – die Liste soll dir nur eine kleine Hilfe sein, falls du eine brauchst.',
+    wishlistLead2: 'Falls du mir etwas schenken möchtest und noch keine Idee hast, findest du hier ein paar Vorschläge. Natürlich kannst du mich auch mit etwas anderem überraschen.',
     wishlistLead3: 'Und vor allem zählt, dass wir gemeinsam eine schöne Zeit verbringen, die Feier genießen und schöne Erinnerungen schaffen. Ein Geschenk ist dabei nicht das Wichtigste.',
     giftFiltersLabel: 'Geschenke filtern', filterAll: 'Alle', filterIndividual: 'Einzelgeschenke', filterGroup: 'Gruppengeschenke', filterVoucher: 'Gutscheine',
     wishlistFilterEmpty: 'In dieser Kategorie gibt es keine Geschenke.',
     wishlistLoading: 'Die Wunschliste wird geladen …', wishlistEmpty: 'Im Moment sind keine Geschenke verfügbar.',
-    wishlistError: 'Die Wunschliste konnte nicht geladen werden. Bitte versuche es später erneut.', wishlistNote: 'Danke, dass du mit mir feierst ♡',
-    giftIndividual: 'Einzelgeschenk', giftGroup: 'Gruppengeschenk', giftVoucher: 'Gutschein', giftIndividualAvailable: 'Geschenk verfügbar', giftVoucherAvailable: 'Gutschein verfügbar', giftVoucherRecommendation: 'Verrate mir dein Lieblingsrestaurant – ich bringe den Appetit mit.', giftAvailable: n => `${n} Plätze verfügbar`,
+    wishlistError: 'Die Wunschliste konnte nicht geladen werden. Bitte versuche es später erneut.',
+    wishlistDataError: 'Apps Script konnte die Daten nicht lesen. Prüfe, ob die Tabellenblätter Regalos und Reservas vorhanden sind und das Projekt Zugriff auf die Tabelle hat.',
+    wishlistConnectionError: 'Es konnte keine Verbindung zu Apps Script hergestellt werden. Prüfe, ob die Bereitstellung aktiv ist und für alle zugänglich ist.',
+    wishlistNote: 'Danke, dass du mit mir feierst ♡',
+    giftIndividual: 'Einzelgeschenk', giftGroup: 'Gruppengeschenk', giftVoucher: 'Gutschein', giftIndividualAvailable: 'Geschenk verfügbar', giftVoucherAvailable: 'Gutschein verfügbar', giftVoucherRecommendation: 'Verrate mir dein Lieblingsrestaurant, ich bringe den Appetit mit.', giftAvailable: n => `${n} Plätze verfügbar`,
     giftReserved: 'Bereits reserviert', giftSoloTaken: 'Als Einzelgeschenk reserviert', giftReserve: 'Geschenk reservieren', giftReserveSlot: 'Platz reservieren', giftReserveSolo: 'Geschenk allein übernehmen', giftDetails: 'Geschenk ansehen',
     giftName: 'Dein Name', giftEmail: 'E-Mail-Adresse', giftPhone: 'Telefonnummer',
     giftConsent: 'Ich bin einverstanden, dass meine Kontaktdaten mit den anderen Teilnehmenden geteilt werden, wenn die Gruppe vollständig ist.',
-    giftCommitment: 'Mit der Bestätigung der Reservierung verpflichte ich mich, dieses Geschenk zu machen. Es gilt dann als vergeben, damit es niemand sonst doppelt schenkt.',
+    giftCommitment: 'Mit der Bestätigung verpflichte ich mich, diesen Artikel zu schenken. Er wird für mich reserviert und ist für andere Gäste nicht mehr verfügbar. Falls ich es mir anders überlege, storniere ich die Reservierung, damit ein anderer Gast ihn schenken kann.',
+    giftGroupCommitment: 'Mit der Bestätigung verpflichte ich mich, an diesem Gruppengeschenk teilzunehmen. Mein Platz wird reserviert und zählt zur Vervollständigung der Gruppe. Falls ich es mir anders überlege, storniere ich die Reservierung, damit jemand anderes meinen Platz übernehmen kann.',
     giftSubmit: 'Reservierung anfragen', giftCancel: 'Abbrechen', giftSending: 'Wird gesendet …',
-    giftSuccess: 'Fast geschafft! Bitte bestätige deine Reservierung über den Link in der E-Mail.',
+    giftSuccess: 'Wir haben dir eine E-Mail geschickt. Bitte bestätige dort, dass du diesen Artikel schenken möchtest. Danach ist er für dich reserviert. Falls du es dir anders überlegst, kannst du über den Link in der E-Mail stornieren.',
+    giftGroupSuccess: 'Wir haben dir eine E-Mail geschickt. Bitte bestätige dort deine Teilnahme an diesem Gruppengeschenk. Danach ist dein Platz reserviert. Falls du es dir anders überlegst, kannst du über den Link in der E-Mail stornieren.',
     giftNoSlots: 'Bereits reserviert', giftPrice: 'Preis',
     eyebrow: 'CARLOS · 30 JAHRE', headline: 'Auf die 30!', cakeAlt: 'Geburtstagstorte',
     subtitle: 'Ein neues Jahrzehnt – der perfekte Anlass, um zusammenzukommen, anzustoßen und gemeinsam zu feiern.',
     dateLabel: 'Datum', timeLabel: 'Uhrzeit', placeLabel: 'Ort', directions: 'ANFAHRT',
+    giftsOptional: 'Geschenke sind vollkommen optional.',
     footer: 'Wir sehen uns bald!', backToTop: 'Nach oben ↑'
   }
 };
@@ -102,6 +114,7 @@ function setLanguage(language) {
     const key = element.dataset.i18n;
     if (translations[language][key] && typeof translations[language][key] === 'string') element.textContent = translations[language][key];
   });
+  updateGiftAvailabilityLanguage_();
 
   document.querySelectorAll('[data-i18n-aria-label]').forEach(element => {
     const key = element.dataset.i18nAriaLabel;
@@ -130,7 +143,6 @@ document.addEventListener('click', event => {
 
   setLanguage(language);
   try { localStorage.setItem('carlos30-language', language); } catch (_) {}
-  if (wishlistLoaded) renderGiftsPreservingReservation();
 });
 
 // Restore the last selected language, falling back to German.
@@ -265,23 +277,24 @@ function loadWishlist() {
   wishlistStatus.textContent = getText('wishlistLoading');
   const callback = 'wishlistCallback' + (++requestCounter);
   const script = document.createElement('script');
-  const timeout = setTimeout(() => { cleanup(); wishlistStatus.textContent = getText('wishlistError'); }, 15000);
+  const timeout = setTimeout(() => { cleanup(); wishlistStatus.textContent = getText('wishlistConnectionError'); }, 15000);
   function cleanup() { clearTimeout(timeout); delete window[callback]; script.remove(); }
   window[callback] = gifts => {
     cleanup(); wishlistLoaded = true;
-    if (!Array.isArray(gifts)) { wishlistStatus.textContent = getText('wishlistError'); return; }
+    if (!Array.isArray(gifts)) { wishlistStatus.textContent = getText(gifts && gifts.error === 'backend' ? 'wishlistDataError' : 'wishlistError'); return; }
     renderGifts(gifts);
   };
-  script.onerror = () => { cleanup(); wishlistStatus.textContent = getText('wishlistError'); };
+  script.onerror = () => { cleanup(); wishlistStatus.textContent = getText('wishlistConnectionError'); };
   script.src = WISHLIST_API_URL + '?action=wishlist&callback=' + callback + '&_=' + Date.now();
   document.head.appendChild(script);
 }
 function renderGifts(gifts) {
   lastLoadedGifts = gifts;
   giftGrid.replaceChildren();
-  if (!gifts.length) { wishlistStatus.textContent = getText('wishlistEmpty'); return; }
+  if (!gifts.length) { wishlistStatus.dataset.i18n = 'wishlistEmpty'; wishlistStatus.textContent = getText('wishlistEmpty'); return; }
   const visibleGifts = currentGiftFilter === 'all' ? gifts : gifts.filter(gift => normalizeGiftType(gift.type) === currentGiftFilter);
-  if (!visibleGifts.length) { wishlistStatus.textContent = getText('wishlistFilterEmpty'); return; }
+  if (!visibleGifts.length) { wishlistStatus.dataset.i18n = 'wishlistFilterEmpty'; wishlistStatus.textContent = getText('wishlistFilterEmpty'); return; }
+  delete wishlistStatus.dataset.i18n;
   wishlistStatus.textContent = '';
   visibleGifts.forEach(gift => {
     const giftType = normalizeGiftType(gift.type);
@@ -293,14 +306,16 @@ function renderGifts(gifts) {
     if (gift.image) { const img = document.createElement('img'); img.className = 'gift-image'; img.src = gift.image; img.alt = gift.name || ''; img.loading = 'lazy'; imageWrap.appendChild(img); }
     else { imageWrap.textContent = '♡'; imageWrap.style.fontSize = '48px'; imageWrap.style.color = '#b69a67'; }
     card.appendChild(imageWrap);
-    const type = document.createElement('p'); type.className = 'gift-type'; type.textContent = getText(giftType === 'grupal' ? 'giftGroup' : giftType === 'gutschein' ? 'giftVoucher' : 'giftIndividual'); card.appendChild(type);
+    const type = document.createElement('p'); type.className = 'gift-type'; type.dataset.i18n = giftType === 'grupal' ? 'giftGroup' : giftType === 'gutschein' ? 'giftVoucher' : 'giftIndividual'; type.textContent = getText(type.dataset.i18n); card.appendChild(type);
     const title = document.createElement('h2'); title.textContent = gift.name || 'Geschenk'; card.appendChild(title);
-    if (gift.price) { const price = document.createElement('p'); price.className = 'gift-meta'; price.textContent = getText('giftPrice') + ': ' + gift.price; card.appendChild(price); }
+    if (gift.price) { const price = document.createElement('p'); price.className = 'gift-meta'; const label = document.createElement('span'); label.dataset.i18n = 'giftPrice'; label.textContent = getText('giftPrice'); price.append(label, document.createTextNode(': ' + gift.price)); card.appendChild(price); }
     const avail = document.createElement('p'); avail.className = 'gift-availability';
-    avail.textContent = reusableGoldVoucher ? getText('giftVoucherRecommendation') : giftType === 'grupal' && gift.soloReserved ? getText('giftReserved') : !gift.available ? getText(giftType === 'grupal' && Number(gift.reserved) > 0 ? 'giftReserved' : 'giftNoSlots') : giftType === 'grupal' ? getText('giftAvailable')(gift.remaining) : getText(giftType === 'gutschein' ? 'giftVoucherAvailable' : 'giftIndividualAvailable');
+    avail.dataset.availability = reusableGoldVoucher ? 'giftVoucherRecommendation' : giftType === 'grupal' && gift.soloReserved ? 'giftReserved' : !gift.available ? (giftType === 'grupal' && Number(gift.reserved) > 0 ? 'giftReserved' : 'giftNoSlots') : giftType === 'grupal' ? 'giftAvailable' : giftType === 'gutschein' ? 'giftVoucherAvailable' : 'giftIndividualAvailable';
+    avail.dataset.remaining = String(gift.remaining || 0);
+    avail.textContent = getGiftAvailabilityText_(avail);
     card.appendChild(avail);
     const actions = document.createElement('div'); actions.className = 'gift-actions';
-    if (gift.link) { const details = document.createElement('a'); details.className = 'button'; details.href = gift.link; details.target = '_blank'; details.rel = 'noopener noreferrer'; details.textContent = getText('giftDetails') + ' ↗'; actions.appendChild(details); }
+    if (gift.link) { const details = document.createElement('a'); details.className = 'button'; details.href = gift.link; details.target = '_blank'; details.rel = 'noopener noreferrer'; const label = document.createElement('span'); label.dataset.i18n = 'giftDetails'; label.textContent = getText('giftDetails'); details.append(label, document.createTextNode(' ↗')); actions.appendChild(details); }
     const canReserve = gift.available && !(giftType === 'grupal' && gift.soloReserved);
     const soloAvailable = giftType === 'grupal' && !gift.soloReserved && (gift.soloAvailable === undefined ? Number(gift.reserved) === 0 : gift.soloAvailable);
     const showReservationForm = mode => {
@@ -314,16 +329,16 @@ function renderGifts(gifts) {
     if (reusableGoldVoucher) {
       // This multi-store voucher does not need a reservation.
     } else if (giftType === 'grupal') {
-      const reserveSlot = document.createElement('button'); reserveSlot.type = 'button'; reserveSlot.disabled = !canReserve;
-      reserveSlot.textContent = canReserve ? getText('giftReserveSlot') : getText('giftReserved');
+      const reserveSlot = document.createElement('button'); reserveSlot.type = 'button'; reserveSlot.disabled = !canReserve; reserveSlot.dataset.i18n = canReserve ? 'giftReserveSlot' : 'giftReserved';
+      reserveSlot.textContent = getText(reserveSlot.dataset.i18n);
       reserveSlot.addEventListener('click', () => showReservationForm('grupo'));
-      const reserveSolo = document.createElement('button'); reserveSolo.type = 'button'; reserveSolo.className = 'solo-reserve'; reserveSolo.disabled = !soloAvailable;
-      reserveSolo.textContent = soloAvailable ? getText('giftReserveSolo') : getText('giftReserved');
+      const reserveSolo = document.createElement('button'); reserveSolo.type = 'button'; reserveSolo.className = 'solo-reserve'; reserveSolo.disabled = !soloAvailable; reserveSolo.dataset.i18n = soloAvailable ? 'giftReserveSolo' : 'giftReserved';
+      reserveSolo.textContent = getText(reserveSolo.dataset.i18n);
       reserveSolo.addEventListener('click', () => showReservationForm('solo'));
       actions.append(reserveSlot, reserveSolo);
     } else {
-      const reserve = document.createElement('button'); reserve.type = 'button'; reserve.disabled = !canReserve;
-      reserve.textContent = canReserve ? getText('giftReserve') : getText('giftReserved');
+      const reserve = document.createElement('button'); reserve.type = 'button'; reserve.disabled = !canReserve; reserve.dataset.i18n = canReserve ? 'giftReserve' : 'giftReserved';
+      reserve.textContent = getText(reserve.dataset.i18n);
       reserve.addEventListener('click', () => showReservationForm('individual'));
       actions.appendChild(reserve);
     }
@@ -332,6 +347,15 @@ function renderGifts(gifts) {
     const modeAllowed = currentMode === 'solo' ? soloAvailable : canReserve;
     if (openGiftFormId === String(gift.id) && modeAllowed) card.appendChild(makeReservationForm(gift, currentMode));
     giftGrid.appendChild(card);
+  });
+}
+function getGiftAvailabilityText_(element) {
+  const key = element.dataset.availability;
+  return key === 'giftAvailable' ? getText(key)(Number(element.dataset.remaining) || 0) : getText(key);
+}
+function updateGiftAvailabilityLanguage_() {
+  document.querySelectorAll('.gift-availability[data-availability]').forEach(element => {
+    element.textContent = getGiftAvailabilityText_(element);
   });
 }
 function renderGiftsPreservingReservation() {
@@ -409,14 +433,18 @@ function makeReservationForm(gift, reservationMode = 'individual') {
   const form = document.createElement('form'); form.className = 'gift-form'; form.id = 'gift-form-' + gift.id;
   const needsPhone = normalizeGiftType(gift.type) === 'grupal' && reservationMode === 'grupo';
   const fields = [['name','giftName','text',100],['email','giftEmail','email',200], ...(needsPhone ? [['phone','giftPhone','tel',35]] : [])];
-  fields.forEach(([name,key,type,max]) => { const label=document.createElement('label'); label.textContent=getText(key); const input=document.createElement('input'); input.name=name; input.type=type; input.maxLength=max; input.required=true; if(name==='phone') input.minLength=6; label.appendChild(input); form.appendChild(label); });
+  fields.forEach(([name,key,type,max]) => { const label=document.createElement('label'); const caption=document.createElement('span'); caption.dataset.i18n=key; caption.textContent=getText(key); const input=document.createElement('input'); input.name=name; input.type=type; input.maxLength=max; input.required=true; if(name==='phone') input.minLength=6; label.append(caption,input); form.appendChild(label); });
   const giftType = normalizeGiftType(gift.type);
-  if (giftType === 'grupal' && reservationMode === 'grupo') { const label=document.createElement('label'); label.className='consent'; const input=document.createElement('input'); input.type='checkbox'; input.name='groupConsent'; input.required=true; label.appendChild(input); const text=document.createElement('span'); text.textContent=getText('giftConsent'); label.appendChild(text); form.appendChild(label); }
-  if (giftType !== 'grupal' || reservationMode === 'solo') { const label=document.createElement('label'); label.className='consent gift-commitment'; const input=document.createElement('input'); input.type='checkbox'; input.name='giftCommitment'; input.required=true; label.appendChild(input); const text=document.createElement('span'); text.textContent=getText('giftCommitment'); label.appendChild(text); form.appendChild(label); }
+  if (giftType === 'grupal' && reservationMode === 'grupo') {
+    const consentLabel=document.createElement('label'); consentLabel.className='consent'; const consentInput=document.createElement('input'); consentInput.type='checkbox'; consentInput.name='groupConsent'; consentInput.required=true; consentLabel.appendChild(consentInput); const consentText=document.createElement('span'); consentText.dataset.i18n='giftConsent'; consentText.textContent=getText('giftConsent'); consentLabel.appendChild(consentText); form.appendChild(consentLabel);
+    const commitmentLabel=document.createElement('label'); commitmentLabel.className='consent gift-commitment'; const commitmentInput=document.createElement('input'); commitmentInput.type='checkbox'; commitmentInput.name='giftCommitment'; commitmentInput.required=true; commitmentLabel.appendChild(commitmentInput); const commitmentText=document.createElement('span'); commitmentText.dataset.i18n='giftGroupCommitment'; commitmentText.textContent=getText('giftGroupCommitment'); commitmentLabel.appendChild(commitmentText); form.appendChild(commitmentLabel);
+  }
+  if (giftType !== 'grupal' || reservationMode === 'solo') { const label=document.createElement('label'); label.className='consent gift-commitment'; const input=document.createElement('input'); input.type='checkbox'; input.name='giftCommitment'; input.required=true; label.appendChild(input); const text=document.createElement('span'); text.dataset.i18n='giftCommitment'; text.textContent=getText('giftCommitment'); label.appendChild(text); form.appendChild(label); }
   const message=document.createElement('p'); message.className='gift-form-message'; message.setAttribute('role','status'); message.setAttribute('aria-live','polite'); form.appendChild(message);
-  const buttons=document.createElement('div'); buttons.className='gift-actions'; const submit=document.createElement('button'); submit.type='submit'; submit.textContent=getText('giftSubmit'); const cancel=document.createElement('button'); cancel.type='button'; cancel.className='button'; cancel.textContent=getText('giftCancel'); cancel.addEventListener('click',()=>{openGiftFormId=null; openGiftFormMode=null; if(wishlistLoaded) loadWishlist();}); buttons.append(submit,cancel); form.appendChild(buttons);
+  const buttons=document.createElement('div'); buttons.className='gift-actions'; const submit=document.createElement('button'); submit.type='submit'; submit.dataset.i18n='giftSubmit'; submit.textContent=getText('giftSubmit'); const cancel=document.createElement('button'); cancel.type='button'; cancel.className='button'; cancel.dataset.i18n='giftCancel'; cancel.textContent=getText('giftCancel'); cancel.addEventListener('click',()=>{openGiftFormId=null; openGiftFormMode=null; if(wishlistLoaded) loadWishlist();}); buttons.append(submit,cancel); form.appendChild(buttons);
   if (confirmedGiftIds.has(String(gift.id))) {
-    message.dataset.statusKey = 'giftSuccess'; message.textContent = getText('giftSuccess');
+    const successKey = reservationMode === 'grupo' ? 'giftGroupSuccess' : 'giftSuccess';
+    message.dataset.statusKey = successKey; message.dataset.i18n = successKey; message.textContent = getText(successKey);
     submit.disabled = true;
     form.querySelectorAll('input').forEach(input => input.disabled = true);
   }
@@ -424,13 +452,13 @@ function makeReservationForm(gift, reservationMode = 'individual') {
   return form;
 }
 function submitReservation(form,gift,submit,message,reservationMode='individual') {
-  if (!apiConfigured()) { message.textContent=getText('wishlistError'); message.classList.add('error'); return; }
+  if (!apiConfigured()) { message.dataset.i18n='wishlistError'; message.textContent=getText('wishlistError'); message.classList.add('error'); return; }
   const data=new FormData(form); const requestId='r'+Date.now()+'_'+(++requestCounter); const iframe=document.getElementById('wishlist-api-frame');
   const hiddenForm=document.createElement('form'); hiddenForm.method='POST'; hiddenForm.action=WISHLIST_API_URL; hiddenForm.target='wishlist-api-frame'; hiddenForm.style.display='none';
-  const values={action:'reserve',giftId:gift.id,name:data.get('name'),email:data.get('email'),phone:data.get('phone'),groupConsent:data.get('groupConsent')==='on'?'true':'false',reservationMode,language:currentLanguage,requestId};
+  const values={action:'reserve',giftId:gift.id,name:data.get('name'),email:data.get('email'),phone:data.get('phone'),groupConsent:data.get('groupConsent')==='on'?'true':'false',giftCommitment:data.get('giftCommitment')==='on'?'true':'false',reservationMode,language:currentLanguage,requestId};
   Object.entries(values).forEach(([name,value])=>{const input=document.createElement('input');input.type='hidden';input.name=name;input.value=String(value??'');hiddenForm.appendChild(input);});
-  document.body.appendChild(hiddenForm); pendingRequests.set(requestId,{form,submit,message,hiddenForm,iframe}); submit.disabled=true; message.classList.remove('error'); message.dataset.statusKey='giftSending'; message.textContent=getText('giftSending'); reservationFormSnapshot = null; hiddenForm.submit();
-  setTimeout(()=>{const pending=pendingRequests.get(requestId);if(pending){pendingRequests.delete(requestId);pending.hiddenForm.remove();pending.submit.disabled=false;pending.message.dataset.statusKey='wishlistError';pending.message.textContent=getText('wishlistError');pending.message.classList.add('error');}},25000);
+  document.body.appendChild(hiddenForm); pendingRequests.set(requestId,{form,submit,message,hiddenForm,iframe}); submit.disabled=true; message.classList.remove('error'); message.dataset.statusKey='giftSending'; message.dataset.i18n='giftSending'; message.textContent=getText('giftSending'); reservationFormSnapshot = null; hiddenForm.submit();
+  setTimeout(()=>{const pending=pendingRequests.get(requestId);if(pending){pendingRequests.delete(requestId);pending.hiddenForm.remove();pending.submit.disabled=false;pending.message.dataset.statusKey='wishlistError';pending.message.dataset.i18n='wishlistError';pending.message.textContent=getText('wishlistError');pending.message.classList.add('error');}},25000);
 }
 window.addEventListener('message', event => {
   const data=event.data; if(!data || !data.requestId) return;
@@ -447,8 +475,11 @@ window.addEventListener('message', event => {
   if(data.type!=='carlos30-reservation-result') return;
   const pending=pendingRequests.get(data.requestId); if(!pending) return;
   pendingRequests.delete(data.requestId); pending.hiddenForm.remove(); pending.submit.disabled=false;
-  pending.message.dataset.statusKey = data.success ? 'giftSuccess' : '';
-  pending.message.textContent=data.success ? getText('giftSuccess') : (data.message || getText('wishlistError')); pending.message.classList.toggle('error',!data.success);
+  const successKey = pending.form.elements.namedItem('groupConsent') ? 'giftGroupSuccess' : 'giftSuccess';
+  pending.message.dataset.statusKey = data.success ? successKey : '';
+  if (data.success) pending.message.dataset.i18n = successKey;
+  else delete pending.message.dataset.i18n;
+  pending.message.textContent=data.success ? getText(successKey) : (data.message || getText('wishlistError')); pending.message.classList.toggle('error',!data.success);
   if(data.success){ confirmedGiftIds.add(String(pending.form.id.replace(/^gift-form-/,''))); pending.submit.disabled=true; pending.form.querySelectorAll('input').forEach(input=>input.disabled=true); }
   reservationFormSnapshot = null;
 });
@@ -470,7 +501,8 @@ function showPublicReservationAction() {
   const copy = {
     es: {
       verifyTitle:'Confirmar reserva', verifyIntro:'Estamos comprobando tu reserva', verifyBusy:'Comprobando reserva…',
-      verifyOk:'¡Correo verificado! Tu reserva está confirmada', verifyFail:'No se pudo confirmar la reserva. El enlace puede no ser válido o haber caducado',
+      verifyOk:'Tu compromiso de regalar este artículo está confirmado. Queda reservado para ti y ya no está disponible para otros invitados. Si cambias de opinión, cancela la reserva desde el correo para que otra persona pueda elegirlo.', verifyFail:'No se pudo confirmar la reserva. El enlace puede no ser válido o haber caducado',
+      verifyGroupOk:'Tu compromiso de participar en este regalo grupal está confirmado. Tu plaza queda reservada y cuenta para completar el grupo. Si cambias de opinión, cancélala desde el correo para que otra persona pueda ocuparla.',
       cancelTitle:'Cancelar reserva', cancelIntro:'¿Seguro que quieres cancelar tu reserva? La plaza volverá a estar disponible',
       cancelButton:'Sí, cancelar mi reserva', cancelBusy:'Cancelando reserva…', cancelOk:'Tu reserva se ha cancelado y la plaza vuelve a estar disponible',
       cancelFail:'No se pudo cancelar la reserva. Puede que ya esté cancelada o que el enlace no sea válido',
@@ -479,7 +511,8 @@ function showPublicReservationAction() {
     },
     de: {
       verifyTitle:'Reservierung bestätigen', verifyIntro:'Deine Reservierung wird überprüft', verifyBusy:'Reservierung wird überprüft…',
-      verifyOk:'E-Mail bestätigt! Deine Reservierung ist bestätigt', verifyFail:'Die Reservierung konnte nicht bestätigt werden. Der Link ist möglicherweise ungültig oder abgelaufen',
+      verifyOk:'Deine Zusage, diesen Artikel zu verschenken, ist bestätigt. Er ist für dich reserviert und für andere Gäste nicht mehr verfügbar. Falls du es dir anders überlegst, storniere bitte über den Link in der E-Mail, damit ein anderer Gast ihn auswählen kann.', verifyFail:'Die Reservierung konnte nicht bestätigt werden. Der Link ist möglicherweise ungültig oder abgelaufen',
+      verifyGroupOk:'Deine Zusage, an diesem Gruppengeschenk teilzunehmen, ist bestätigt. Dein Platz ist reserviert und zählt zur Vervollständigung der Gruppe. Falls du es dir anders überlegst, storniere bitte über den Link in der E-Mail, damit jemand anderes teilnehmen kann.',
       cancelTitle:'Reservierung stornieren', cancelIntro:'Möchtest du deine Reservierung wirklich stornieren? Der Platz wird danach wieder verfügbar',
       cancelButton:'Ja, meine Reservierung stornieren', cancelBusy:'Reservierung wird storniert…', cancelOk:'Deine Reservierung wurde storniert und der Platz ist wieder verfügbar',
       cancelFail:'Die Reservierung konnte nicht storniert werden. Vielleicht wurde sie bereits storniert oder der Link ist ungültig',
@@ -518,13 +551,28 @@ function showPublicReservationAction() {
   }
   updateCopy();
 
+  function sendCancelNotification(notificationToken, noticeLanguage) {
+    const iframe = document.getElementById('wishlist-api-frame');
+    if (!iframe || !apiConfigured()) return;
+    const noticeForm = document.createElement('form');
+    noticeForm.method = 'POST'; noticeForm.action = WISHLIST_API_URL; noticeForm.target = 'wishlist-api-frame'; noticeForm.style.display = 'none';
+    const noticeId = 'cancel_notice_' + Date.now() + '_' + (++requestCounter);
+    const values = { action: 'cancel-notify', token: notificationToken, language: noticeLanguage, requestId: noticeId };
+    Object.entries(values).forEach(([name, value]) => {
+      const input = document.createElement('input'); input.type = 'hidden'; input.name = name; input.value = String(value); noticeForm.appendChild(input);
+    });
+    document.body.appendChild(noticeForm);
+    noticeForm.submit();
+    window.setTimeout(() => noticeForm.remove(), 60000);
+  }
+
   function submitAction() {
     if(!apiConfigured()){currentMessageKey=action==='cancel'?'cancelFail':action==='verify'?'verifyFail':'groupFail';updateCopy();return;}
     button.disabled=true;
     currentMessageKey=action==='cancel'?'cancelBusy':action==='verify'?'verifyBusy':'groupBusy';updateCopy();
     const requestId='page_'+Date.now()+'_'+(++requestCounter);
     const hiddenForm=document.createElement('form');hiddenForm.method='POST';hiddenForm.action=WISHLIST_API_URL;hiddenForm.target='wishlist-api-frame';hiddenForm.style.display='none';
-    const values={action,token,language,requestId};
+    const values={action,token,language,requestId,deferNotifications:action==='cancel'?'true':''};
     Object.entries(values).forEach(([name,value])=>{const input=document.createElement('input');input.type='hidden';input.name=name;input.value=String(value);hiddenForm.appendChild(input);});
     document.body.appendChild(hiddenForm);
     const onMessage=event=>{
@@ -541,8 +589,9 @@ function showPublicReservationAction() {
         updateCopy();
         return;
       }
-      currentMessageKey=action==='cancel'?(data.success?'cancelOk':'cancelFail'):(data.success?'verifyOk':'verifyFail');
+      currentMessageKey=action==='cancel'?(data.success?'cancelOk':'cancelFail'):(data.success?(data.data&&data.data.group?'verifyGroupOk':'verifyOk'):'verifyFail');
       updateCopy();
+      if(action==='cancel'&&data.success&&data.data&&data.data.notificationToken) sendCancelNotification(data.data.notificationToken,language);
     };
     window.addEventListener('message',onMessage);
     hiddenForm.submit();
